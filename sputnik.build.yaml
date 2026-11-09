@@ -1,0 +1,15 @@
+schema: "sputnik.build.v1"
+name: "slowpilot/torch-som"
+version: "0.1.0"
+source_root: "src"
+requires: {sputnik: ">=1.0.0 <2.0.0"}
+profiles:
+  required: ["core.v1", "ffi.v1"]
+artifact: {variant: "source", bundle: "none"}
+target: {os: "any", arch: "any"}
+dependencies:
+  "slowpilot/torch": "0.1.7"
+  "slowpilot/plot": "0.2.0"
+files:
+  - "src/slowpilot/torch_som.s"
+  - "README.md"

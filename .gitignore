@@ -1,0 +1,7 @@
+/.sputnik/
+/build/
+/*.png
+/*.svg
+*.sputnikpkg
+*.publish-*.json
+.DS_Store
